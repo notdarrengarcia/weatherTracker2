@@ -7,7 +7,7 @@ var searchEl = document.querySelector("#search");
 
 function getWeather(){
      var cityName = searchEl.value
-     var url = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial";
+     var url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial";
      getForecast(cityName)
      fetch(url)
      .then((res) => res.json()).then((data) => {
@@ -32,7 +32,7 @@ function getWeather(){
  }
 
  function getForecast(cityName) {
-     var url = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial"
+     var url = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial"
 
      fetch(url)
      .then((res) => res.json()).then((data) => {
@@ -41,7 +41,7 @@ function getWeather(){
  }
 
  function getForecast(cityName) {
-    var fiveDayQueryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial"
+    var fiveDayQueryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=20e409c032b67b29429c689f2b013d9f&units=imperial"
 
     $.ajax({
         url: fiveDayQueryURL,
@@ -64,7 +64,7 @@ function getWeather(){
                 var image = $('<img>');
                 image.attr(
                     'src',
-                    `http://openweathermap.org/img/wn/${hour.weather[0].icon}.png`
+                    `https://openweathermap.org/img/wn/${hour.weather[0].icon}.png`
                 );
                 DIV.addClass('divClasses justify-content-left');
                 DIV.append(`<h3>${date}</h3>`);
