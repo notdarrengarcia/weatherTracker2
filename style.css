@@ -1,0 +1,90 @@
+header{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1;
+    background-color: white;
+}
+
+.container{
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem;
+}
+
+ /* .weather-container{
+    padding-top: 1rem;
+    background-color: aquamarine;
+    border-radius: 5px;
+}  */
+
+.searchbar{
+    padding-top: 1rem;
+    background-color: #ededed;
+    border-radius: 5px;
+    height: 50vh;
+    width: 15vw;
+}
+
+.row{
+    width: 100vw;
+}
+
+ .card{
+    width: 100vw;
+} 
+
+#todayWeather{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: black;
+    border-style: solid;
+    width: 75vw;
+    height: 25vh;
+}
+
+#fiveDayForecast{
+    background-color: white;
+    text-align: center;
+    width: 75vw;
+    height: 25vh;
+    border-radius: 5px;
+    display: flex;
+    border: black;
+    border-style: solid;
+}
+
+
+
+#forecast{
+    width: 63vw;
+}
+
+#cityName{
+    margin-left: 1rem;
+}
+
+.currentWeather{
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+p{
+    text-align: center;
+}
+
+.divClasses{
+    border: black solid 1px;
+    width: 20%;
+    margin: 5px;
+    background-color: aquamarine;
+    border-radius: 5%;
+    color: black;
+}
